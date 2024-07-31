@@ -1,0 +1,69 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: rgb(235, 206, 208);
+    --mid-color: rgb(27, 145, 191);
+    --light-color: rgb(233, 242, 241);
+    --neutral-color: hsl(11, 14%, 60%);
+    --alt-color: rgb(86, 115, 109);
+    --alt-color-sheer: rgba(86, 115, 109, 0.5);
+    --primary-color-sheer: rgba(235, 206, 208, 0.3);
+    --hover-color: rgba(153, 159, 160, 0.3);
+    --radius: 0.5rem;
+}
+
+.main-container {
+    margin-top: 40px;
+    border: 2px solid rgb(0, 0, 0, 0.5);
+}
+
+/* title */
+.title-container {
+    background-image: url(library.webp);
+}
+
+h1 {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--light-color);
+    padding: 1rem;
+}
+
+/* library */
+#library {
+    height: 75vh;
+    padding-top: 1rem;
+    background-color: var(--primary-color-sheer);
+}
+
+#library label {
+    padding: 10px 5px 10px 10px;
+    font-weight: bold;
+}
+
+#library input:hover{
+    padding: 2.5px;
+    border-color: var(--mid-color);
+    background-color: var(--hover-color);
+}
+
+#library button {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: var(--hover-color);
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#library button:hover {
+    font-weight: bold;
+    background-color: var(--alt-color);
+    color: var(--light-color)
+}
+
+/* table */

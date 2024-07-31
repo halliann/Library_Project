@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library Project</title>
+    <link rel="stylesheet" href="stylesheet.css">
   </head>
+
+
   <body>
     <main
       style="
@@ -14,19 +17,40 @@
         text-align: center;
       "
     >
-      <div>
-        <h1>Library Project</h1>
+      <div class="main-container">
+        <div class="title-container">
+          <h1 class="title">Library Project</h1>
+        </div>
         <div id="library">
           <!-- Add table here -->
           <table id="table" style="min-width: 680px; margin: 2rem">
             <thead>
               <tr>
                 <th>Title</th>
+                  <label id="titleLabel">Title</label>
+                  <input
+                    type="input"
+                    name="title"
+                    id="titleInput"
+                  />
                 <th>Author</th>
+                  <label id="authorLabel">Author</label>
+                  <input
+                    type="input"
+                    name="author"
+                    id="authorInput"
+                  />
                 <th>Read</th>
+                  <label id="readLabel">Read</label>
+                    <input
+                      type="checkbox"
+                      name="read"
+                      id="readInput"
+                    />
+                <button id="addBook">Add Book</button>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="tableBody">
               <tr>
                 <td>Name of the Wind</td>
                 <td>Patrick Rothfuss</td>
